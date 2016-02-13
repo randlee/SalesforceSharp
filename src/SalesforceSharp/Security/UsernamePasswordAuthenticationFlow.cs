@@ -111,7 +111,7 @@ namespace SalesforceSharp.Security
 
             if (isAuthenticated)
             {
-                return new AuthenticationInfo(responseData.access_token.Value, responseData.instance_url.Value);
+                return new AuthenticationInfo(responseData["access_token"].Value, responseData["instance_url"].Value);
             }
             else
             {

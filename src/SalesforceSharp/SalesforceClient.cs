@@ -40,7 +40,7 @@ namespace SalesforceSharp
         /// Initializes a new instance of the <see cref="SalesforceClient"/> class.
         /// </summary>
         /// <param name="restClient">The rest client.</param>
-        protected internal SalesforceClient(IRestClient restClient)
+        public SalesforceClient(IRestClient restClient)
         {
             m_restClient = restClient;
             ApiVersion = "v28.0";
